@@ -1,6 +1,5 @@
 package com.minhto.coffeetime.presentation.workflow
 
-import android.util.Log
 import com.minhto.coffeetime.domain.worker.CoffeeWorker
 import com.minhto.coffeetime.presentation.viewdata.CoffeeScreen
 import com.squareup.workflow1.Snapshot
@@ -28,7 +27,6 @@ class CoffeeWorkflow : StatefulWorkflow<Unit, CoffeeState, Nothing, CoffeeScreen
         state = state.copy(coffees = coffeeDTO)
       }
     }
-
     return CoffeeScreen(recipeName = if (renderState.coffees.isNotEmpty()) renderState.coffees[0].title else "")
   }
 }

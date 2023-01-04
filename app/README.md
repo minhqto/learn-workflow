@@ -1,3 +1,0 @@
-# Learning Workflow by Square
-
-## 
